@@ -10,13 +10,13 @@
   <body>
     <header class="main-nav-bar">
         <div class="dropdown">
-        <button class="dropbtn">Dropdown</button>
+        <button class="dropbtn">Choose A Player</button>
         <div class="dropdown-content">
           <script type="text/x-handlebars-template" class ="char-card">
           {{#each element}}
             <div class="">
               <img src="{{Image}}" alt="">
-              <h3>{{choiceElement}}</h3>
+              <h3 class="selected-element">{{choiceElement}}</h3>
               <p>{{Desciption}}</p>
             </div>
             {{/each}}
@@ -30,10 +30,9 @@
         <!-- container start -->
       <div class="row justify-content-around align-items-center player-cards">
           <div class="card col-12 col-md-5 mt-4 text-center player-card">
-            <img src="images/water-elemental.jpeg" class="card-img-top card-picture" alt="element picture">
+            <img src="images/water-elemental.jpeg" class="card-img-top card-picture player-image" alt="element picture">
             <div class="card-body player-card-body">
-              <h5 class="card-title-one">Earth Warrior
-              </h5>
+              <h5 class="card-title-one player-name"></h5>
               <div class="progress health-status">
                 <div class="progress-bar hp-bar player-hp" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%
                 </div>
@@ -41,10 +40,9 @@
             </div>
           </div>
           <div class="card col-12 col-md-5 mt-4 text-center player-card">
-            <img src="images/wind-elemental.jpeg" class="card-img-top card-picture" alt="card picture">
+            <img src="images/wind-elemental.jpeg" class="card-img-top card-picture comp-image" alt="card picture">
             <div class="card-body comp-card-body">
-              <h5 class="card-title-one">Wind Warrior
-              </h5>
+              <h5 class="card-title-one comp-name"></h5>
               <div class="progress health-status">
                 <div class="progress-bar hp-bar computer-hp" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%
                 </div>
